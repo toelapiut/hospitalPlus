@@ -3,10 +3,14 @@
     "firstName": "Apiut",
     "lastName": "Toel",
     "sex": "Male",
-    "DOB": "04/13/1992",
+    "dob": "04/13/1992",
     "status": "completed",
     "emergencyNo": "+254701355708",
-    "phoneNo": "0702355708"
+    "phoneNo": "0702355708",
+    "location":"Nairobi",
+    "checkIntime":"18:14",
+    "examiner":"Dr name",
+    "followUp":"we love health"
   }],
   "medications": [{
     "medication": "paracetamal",
