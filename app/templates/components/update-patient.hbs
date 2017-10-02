@@ -1,0 +1,24 @@
+{{#if updatePatient}}
+<h4>Update Patient's Info: {{patientInfo.firstName}} {{patientInfos.lastName}}</h4>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="firstName">Name:</label> {{input value=firstName id="firstName"}}
+    </div>
+    <div class="form-group">
+      <label for="lastName">Surame:</label> {{input value=lastName id="lastName"}}
+    </div>
+    <div class="form-group">
+      <label for="sex">Sex:</label> {{input value=sex id="sex"}}
+    </div>
+    <div class="form-group">
+      <label for="DOB">Date of Birth:</label> {{input value=DOB id="DOB"}}
+    </div>
+    <div class="form-group">
+      <label for="status">Status:</label> {{input value=status id="status"}}
+    </div>
+    <button {{action 'update' patientInfo}}>Save</button>
+  </form>
+</div>
+{{/else}}
+<button {{action 'updatePatient'}}>Edit Patient Info</button>
