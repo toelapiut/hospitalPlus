@@ -18,6 +18,15 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: "AIzaSyBwNmlGqSy1biZXrLcvMQRa-7fSK-rH0gA",
+      authDomain: "hospital-a22ae.firebaseapp.com",
+      databaseURL: "https://hospital-a22ae.firebaseio.com",
+      projectId: "hospital-a22ae",
+      storageBucket: "hospital-a22ae.appspot.com",
+      messagingSenderId: "942471059549"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
