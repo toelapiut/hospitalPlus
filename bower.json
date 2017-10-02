@@ -1,0 +1,14 @@
+{
+  "name": "hospital",
+  "description": "Small description for hospital goes here",
+  "main": ".eslintrc.js",
+  "license": "MIT",
+  "homepage": "https://github.com/toelapiut/hospitalPlus",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
