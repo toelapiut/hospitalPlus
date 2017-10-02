@@ -1,0 +1,26 @@
+{{#if addMedication}}
+  <h1>Medicine Supply</h1>
+
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="medication">Medication:</label> {{input value=medication id="medication"}}
+      </div>
+      <div class="form-group">
+        <label for="prescriber">Prescriber:</label> {{input value=prescriber id="prescriber"}}
+      </div>
+      <div class="form-group">
+        <label for="prescription">Prescription:</label> {{input value=presciption id="prescription"}}
+      </div>
+      <div class="form-group">
+        <label for="Date">Date of Prescription:</label> {{input value=date id="date"}}
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity Needed</label> {{input value=quantity id="quantity"}}
+      </div>
+      <button {{action 'saveMedication'}}>Add To Receipt</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'drugsFormShow'}}>Prescribe Medicine</button>
+{{/if}}
