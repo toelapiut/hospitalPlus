@@ -10,5 +10,4 @@ export default Ember.Route.extend({
       newPatient.save();
       this.transitionTo('index');
     }
-  }
-});
+  
