@@ -1,15 +1,21 @@
+<h1>Add New Patient </h1>
+
 <div class=container>
   {{#if showHideForm}}
 
     <form>
-      <div class=form-group>
-        <label for="id">First Name</label> {{input value=firstName id="firstName" class="form-control"}}
+      <div class="row">
+        <div class="col-md-6">
+          <div class=form-group>
+            <label for="id">First Name</label> {{input value=firstName id="firstName" class="form-control"}}
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class=form-group>
+            <label for="id">Last Name</label> {{input value=lastName id="lastName" class="form-control"}}
+          </div>
+        </div>
       </div>
-
-      <div class=form-group>
-        <label for="id">Last Name</label> {{input value=lastName id="lastName" class="form-control"}}
-      </div>
-
       <div class=form-group>
         <label for="id">patients ID</label> {{input value=id id='id' class="form-control"}}
       </div>
@@ -51,7 +57,7 @@
       </div>
 
       <button class="btn btn-primary" {{action 'submitfrom'}}>save</button>
-
+      <button {{action "hidePatientForm"}}>Cancel</button>
     </form>
   {{else}}
     <button class="btn btn-primary" {{action 'showForm'}}>+ new patient</button>

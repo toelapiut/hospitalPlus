@@ -6,6 +6,9 @@ export default Ember.Component.extend({
     showForm() {
       this.set('showHideForm', true)
     },
+    hidePatientForm() {
+      this.set('showHideForm', false)
+    },
     submitfrom() {
       var params = {
         checkIntime: this.get('checkIntime'),
@@ -20,8 +23,8 @@ export default Ember.Component.extend({
         sex: this.get('sex'),
         status: this.get('status')
       };
-      this.set('showHideForm',false);
-      this.sendAction("submitform",params)
+      this.set('showHideForm', false);
+      this.sendAction("submitform", params)
     }
   }
 });
