@@ -21,7 +21,7 @@ export default Ember.Component.extend({
         followUp: this.get('followUp')
       };
       this.set('updatePatient', false);
-      this.sendAction('update', patientdisplay, params)
+      this.sendAction('update', patientdisplay, params);
     }
   }
 });

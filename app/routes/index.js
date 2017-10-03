@@ -13,10 +13,5 @@ export default Ember.Route.extend({
       newPatient.save();
       this.transitionTo('index');
     },
-    drugsFormShow(params) {
-      var newMedication = this.store.createRecord('medication', params)
-      newMedication.save();
-      this.transitionTo('index');
-    }
   }
 });
