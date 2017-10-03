@@ -1,6 +1,6 @@
 {{#if updatePatient}}
 
-<h4>Update Patient's Info: {{patientdisp.firstName}} {{patientdisp.lastName}}</h4>
+<h4>Update Patient's Info: {{patientdisplay.firstName}} {{patientdisplay.lastName}}</h4>
 
 <div>
   <form>
@@ -46,7 +46,7 @@
     <div class=form-group>
       <label for="id">Status</label> {{textarea value=status id="status" class="form-control"}}
     </div>
-    <button {{action 'update' patientdisp}}>Save</button>
+    <button {{action 'update' patientdisplay}}>Save</button>
   </form>
 </div>
 {{else}}

@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         prescription: this.get('prescription'),
         date: this.get('date'),
         quantity: this.get('quantity'),
-          patientdisp: this.get('patientdisp')
+          patientdisplay: this.get('patientdisplay')
       };
       this.set('addMedication', false);
       this.sendAction('saveMedication', params);

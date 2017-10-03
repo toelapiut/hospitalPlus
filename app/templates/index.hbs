@@ -1,4 +1,4 @@
-{{#each model as |patientdisp|}}
-{{patient-tile patientdisp=patientdisp}}
+{{#each model.patientdisplays as |patientdisplay|}}
+{{patient-tile patientdisplay=patientdisplay}}
 {{/each}}
 {{new-patient showForm="showForm"}}
