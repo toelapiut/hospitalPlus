@@ -6,16 +6,22 @@ export default Ember.Component.extend({
     updatePatient() {
       this.set('updatePatient', true);
     },
-    update(patientInfo) {
+    update(patientdisp) {
       var params = {
-        name: this.get('name'),
-        surname: this.get('surname'),
+        firstName: this.get('firstName'),
+        lastName: this.get('lastname'),
         sex: this.get('sex'),
         dob: this.get('dob'),
-        status: this.get('status')
+        status: this.get('status'),
+        emergencyNo: this.get('emergencyNo'),
+        phoneNo: this.get('phoneNo'),
+        location: this.get('location'),
+        checkIntimethis: this.get('checkIntimethis'),
+        examiner: this.get('examiner'),
+        followUp: this.get('followUp')
       };
       this.set('updatePatient', false);
-      this.sendAction('update', patientInfo, params)
+      this.sendAction('update', patientdisp, params)
     }
   }
 });
