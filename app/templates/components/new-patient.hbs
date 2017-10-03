@@ -1,1 +1,59 @@
-{{yield}}
+<div class=container>
+  {{#if showHideForm}}
+
+    <form>
+      <div class=form-group>
+        <label for="id">First Name</label> {{input value=firstName id="firstName" class="form-control"}}
+      </div>
+
+      <div class=form-group>
+        <label for="id">Last Name</label> {{input value=lastName id="lastName" class="form-control"}}
+      </div>
+
+      <div class=form-group>
+        <label for="id">patients ID</label> {{input value=id id='id' class="form-control"}}
+      </div>
+
+      <div class=form-group>
+        <label for="id">Location</label> {{input value=location id="location" class="form-control"}}
+      </div>
+
+      <div class=form-group>
+        <label for="id">Date Of Birth</label> {{input value=dob id='dob' class="form-control"}}
+      </div>
+
+      <div class=form-group>
+        <label for="id">Phones Number</label> {{input value=phoneNo id='phoneNo' class="form-control"}}
+      </div>
+
+      <div class=form-group>
+        <label for="id">Gender</label> {{input value=sex id="sex" class="form-control"}}
+      </div>
+
+      <div class=form-group>
+        <label for="id">emergency Number</label> {{input value=emergencyNo id='emergencyNo' class="form-control"}}
+      </div>
+
+      <div class=form-group>
+        <label for="id">Examiner</label> {{input value=examiner id='examiner' class="form-control"}}
+      </div>
+
+      <div class=form-group>
+        <label for="id">CheckIn Time</label> {{input value=checkIntime id=checkIntime class="form-control"}}
+      </div>
+
+      <div class=form-group>
+        <label for="id">Follow Up</label> {{input value=followUp id="followUp" class="form-control"}}
+      </div>
+
+      <div class=form-group>
+        <label for="id">Status</label> {{textarea value=status id="status" class="form-control"}}
+      </div>
+
+      <button class="btn btn-primary" {{action 'submitfrom'}}>save</button>
+
+    </form>
+  {{else}}
+    <button class="btn btn-primary" {{action 'showForm'}}>+ new patient</button>
+  {{/if}}
+</div>
