@@ -1,10 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addMedication: false,
+  updatePatient: false,
   actions: {
     updatePatient() {
-      this.set('addMedication', true);
+      this.set('updatePatient', true);
     },
     update(patientInfo) {
       var params = {
