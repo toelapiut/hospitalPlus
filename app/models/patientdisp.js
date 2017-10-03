@@ -7,5 +7,11 @@ export default DS.Model.extend({
   lastName: DS.attr(),
   phoneNo: DS.attr(),
   sex: DS.attr(),
-  status: DS.attr()
+  examiner: DS.attr(),
+  followUp: DS.attr(),
+  checkIntime:DS.attr(),
+  checkOuttime:DS.attr(),
+   location:DS.attr(),
+   patientsId: DS.attr(),
+   status: DS.attr()
 });
