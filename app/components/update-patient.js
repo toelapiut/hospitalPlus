@@ -1,12 +1,14 @@
+import Ember from 'ember';
+
 export default Ember.Component.extend({
   updatePatient: false,
   actions: {
     updatePatient() {
       this.set('updatePatient', true);
     },
-    update(patientInfo) {
+    update(patientdisp) {
       var params = {
-        firstName: this.get('name'),
+        firstName: this.get('firstName'),
         lastName: this.get('lastname'),
         sex: this.get('sex'),
         dob: this.get('dob'),
@@ -16,10 +18,10 @@ export default Ember.Component.extend({
         location: this.get('location'),
         checkIntimethis: this.get('checkIntimethis'),
         examiner: this.get('examiner'),
-        followUp: this.get('followUp'),
+        followUp: this.get('followUp')
       };
       this.set('updatePatient', false);
-      this.sendAction('update', patientInfo, params)
+      this.sendAction('update', patientdisp, params)
     }
   }
 });

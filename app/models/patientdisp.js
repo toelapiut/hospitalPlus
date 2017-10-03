@@ -7,5 +7,9 @@ export default DS.Model.extend({
   lastName: DS.attr(),
   phoneNo: DS.attr(),
   sex: DS.attr(),
-  status: DS.attr()
+  status: DS.attr(),
+  location: DS.attr(),
+  checkIntimethis: DS.attr(),
+  examiner: DS.attr(),
+  followUp: DS.attr()
 });
