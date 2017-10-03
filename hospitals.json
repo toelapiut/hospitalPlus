@@ -9,9 +9,11 @@
     "phoneNo": "0702355708",
     "location":"Nairobi",
     "checkIntime":"18:14",
+    "checkOuttime":"1300hrs",
+    "patientsId":"4572829",
     "examiner":"Dr name",
     "followUp":"we love health",
-    "DOB": "04/13/1992",
+    "dob": "04/13/1992",
     "status": "completed",
     "emergencyNo": "+254701355708",
     "phoneNo": "0702355708"

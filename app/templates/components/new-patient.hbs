@@ -32,10 +32,10 @@
         <label for="id">Phones Number</label> {{input value=phoneNo id='phoneNo' class="form-control"}}
       </div>
 
-      <div class=form-group>
-        <label for="id">Gender</label> {{input value=sex id="sex" class="form-control"}}
-      </div>
 
+      <div class=form-group>
+        <label for="id">Gender</label> {{input value=checkOuttime id="checkOuttime" class="form-control"}}
+      </div>
       <div class=form-group>
         <label for="id">emergency Number</label> {{input value=emergencyNo id='emergencyNo' class="form-control"}}
       </div>
@@ -49,6 +49,10 @@
       </div>
 
       <div class=form-group>
+        <label for="checkOuttime">checkOuttime</label> {{input value=sex id="sex" class="form-control"}}
+      </div>
+
+      <div class=form-group>
         <label for="id">Follow Up</label> {{input value=followUp id="followUp" class="form-control"}}
       </div>
 
@@ -56,7 +60,7 @@
         <label for="id">Status</label> {{textarea value=status id="status" class="form-control"}}
       </div>
 
-      <button class="btn btn-primary" {{action 'submitfrom'}}>save</button>
+      <button class="btn btn-primary" {{action 'submitForm'}}>save</button>
       <button {{action "hidePatientForm"}}>Cancel</button>
     </form>
   {{else}}

@@ -9,9 +9,11 @@ export default Ember.Component.extend({
     hidePatientForm() {
       this.set('showHideForm', false)
     },
-    submitfrom() {
+    submitForm() {
       var params = {
         checkIntime: this.get('checkIntime'),
+        checkOuttime:this.get('checkOuttime'),
+        patientsId:this.get("patientsId"),
         dob: this.get('dob'),
         emergencyNo: this.get('emergencyNo'),
         examiner: this.get('emergencyNo'),
@@ -24,7 +26,7 @@ export default Ember.Component.extend({
         status: this.get('status')
       };
       this.set('showHideForm', false);
-      this.sendAction("submitform", params)
+      this.sendAction("submitForm", params)
     }
   }
 });
