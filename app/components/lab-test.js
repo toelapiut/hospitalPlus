@@ -2,12 +2,16 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    labInfo() {
+    labInfos() {
       var params = {
-        labType: this.get('labType'),
-        labNotes: this.get('labNotes')
+        labTypes: this.get('labType'),
+        labNotes: this.get('labNotes'),
+        dateRequested: this.get('dateRequested'),
+        requestedBy: this.get('requestedBy'),
+        patientNames: this.get('patientNames'),
+        testResults: this.get('testResults')
       };
-      this.sendAction('labInfoz', params);
+      this.sendAction('labInfos', params);
     }
   }
 });

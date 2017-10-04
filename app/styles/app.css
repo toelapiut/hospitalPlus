@@ -4,3 +4,8 @@
 .btn-labinfo button{
   height: 56px;
 }
+
+#cont {
+  background-color: azure;
+  background-image: url(../img/microscope.jpg);
+}
