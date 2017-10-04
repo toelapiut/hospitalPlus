@@ -1,0 +1,46 @@
+@import 'ember-burger-menu';
+@import 'ember-burger-menu/variables';
+@import 'ember-burger-menu/structure';
+@import 'ember-burger-menu/animations/scale-down';
+@import 'ember-burger-menu/animations/menu-item/stack';
+@import "ember-bootstrap/bootstrap";
+$bm-transition-duration: 0.5s;
+
+.hamburger {
+  opacity: 1;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+
+  &.burger-hidden {
+    opacity: 0;
+  }
+}
+
+#main {
+  height: 100vh;
+}
+
+ul {
+  height: 100%;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+
+}
+/* Change the link color on hover */
+li a:hover {
+  list-style-type: none;
+  background-color: #555;
+  color: white;
+
+}
