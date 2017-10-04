@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     updatePatient() {
       this.set('updatePatient', true);
     },
-    update(patientdisp) {
+    update(patientdisplay) {
       var params = {
         firstName: this.get('firstName'),
         lastName: this.get('lastname'),
@@ -21,7 +21,7 @@ export default Ember.Component.extend({
         followUp: this.get('followUp')
       };
       this.set('updatePatient', false);
-      this.sendAction('update', patientdisp, params)
+      this.sendAction('update', patientdisplay, params);
     }
   }
 });

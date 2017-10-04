@@ -18,9 +18,9 @@
       <div class="form-group">
         <label for="quantityRequested">Quantity Needed</label> {{input value=quantityRequested id="quantityRequested"}}
       </div>
-      <button {{action 'saveMedication' patientdisp}}>Add To Receipt</button>
+      <button class="btn btn-success" {{action 'saveMedication'}}>Add To Receipt</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'drugsFormShow'}}>Prescribe Medicine</button>
+  <button class="btn btn-info" {{action 'drugsFormShow'}}>Prescribe Medicine</button>
 {{/if}}

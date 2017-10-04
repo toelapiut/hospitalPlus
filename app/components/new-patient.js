@@ -12,11 +12,11 @@ export default Ember.Component.extend({
     submitForm() {
       var params = {
         checkIntime: this.get('checkIntime'),
-        checkOuttime:this.get('checkOuttime'),
-        patientsId:this.get("patientsId"),
+        checkOuttime: this.get('checkOuttime'),
+        patientsId: this.get("patientsId"),
         dob: this.get('dob'),
         emergencyNo: this.get('emergencyNo'),
-        examiner: this.get('emergencyNo'),
+        examiner: this.get('examiner'),
         firstName: this.get('firstName'),
         followUp: this.get('followUp'),
         lastName: this.get('lastName'),
