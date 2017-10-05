@@ -46,22 +46,31 @@ h2,h3,h4 {
 .btn-labinfo button {
   height: 56px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
 
 #cont {
   background-color: azure;
   background-image: url(../img/microscope.jpg);
-=======
+}
+
 .form-control {
   input: 30%;
 }
 .container {
   padding-right: 40px;
   padding-left: 40px;
->>>>>>> 8e0b27e14b13f2d556982faab2b10e015534eca8
-=======
-h2,h3,h4 {
+}
+
+.h2,h3,h4 {
   color: white;
->>>>>>> f7564e855d97a618f2786d6b0ef6a3a92f6a2d9a
+}
+
+.conta {
+  background-color: #2F4F4F;
+}
+
+.h1 {
+  text-align: bold;
+  background-color: blue;
 }
