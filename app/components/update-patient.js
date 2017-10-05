@@ -15,6 +15,7 @@ export default Ember.Component.extend({
         examiner: this.get('examiner'),
         followUp: this.get('followUp')
       };
+      this.set('updatePatient', true);
       this.sendAction('update', patientdisplay, params);
     }
   }

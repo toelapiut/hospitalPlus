@@ -5,11 +5,11 @@ export default Ember.Component.extend({
     labInfos() {
       var params = {
         labTypes: this.get('labType'),
-        labNotes: this.get('labNotes'),
+        labNotes: this.get('labNote'),
         dateRequested: this.get('dateRequested'),
         requestedBy: this.get('requestedBy'),
-        patientNames: this.get('patientNames'),
-        testResults: this.get('testResults')
+        patientNames: this.get('patientName'),
+        testResults: this.get('testResult')
       };
       this.sendAction('labInfos', params);
     }
