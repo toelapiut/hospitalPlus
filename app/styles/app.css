@@ -1,11 +1,56 @@
+
+.checks img {
+  height: 20px;
+  width: 30px;
+}
+.addpatient img{
+margin-right: 100%;
+
+}
+.checks {1`1`  text-align: center;
+}
+
+.gender {
+  width: 100px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+td{
+  vertical-align: text-bottom;
+  margin: 60px;
+}
+th, td {
+  padding: 50px;
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+h1{
+  color: #000;
+}
+.myTable{
+  padding: 20px;
+}
+
 .btn-labinfo{
   margin-top: 25px;
 }
 .btn-labinfo button{
   height: 56px;
 }
+<<<<<<< HEAD
 
 #cont {
   background-color: azure;
   background-image: url(../img/microscope.jpg);
+=======
+.form-control {
+  input: 30%;
+}
+.container {
+  padding-right: 40px;
+  padding-left: 40px;
+>>>>>>> 8e0b27e14b13f2d556982faab2b10e015534eca8
 }

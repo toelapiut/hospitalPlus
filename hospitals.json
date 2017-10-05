@@ -1,5 +1,5 @@
 {
-  "patientdisps": [{
+  "patientdisplays": [{
     "firstName": "Apiut",
     "lastName": "Toel",
     "sex": "Male",
@@ -30,6 +30,10 @@
   }],
   "labs": [{
     "labType": "bleeding Time",
-    "labNotes": "fracture"
+    "labNote": "fracture",
+    "requestedBy":"Dr who",
+    "testResult":"blooding test",
+    "dateRequested":"12/23/1997",
+    "patientName":"Apiut Toel"
   }]
 }
