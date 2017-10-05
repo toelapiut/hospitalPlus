@@ -30,29 +30,31 @@
     </tr>
   </thead>
     <tbody>
-    {{#each model as |patientInfo|}}
+    {{#each model.patientdisplays as |patientdisplay|}}
 
 
 <tr>
-  <td>{{patientInfo.patientsId}}</td>
+  <td>{{patientdisplay.patientsId}}</td>
 
-  <td>{{patientInfo.firstName}}</td>
+  <td>{{patientdisplay.firstName}}</td>
 
-  <td>{{patientInfo.lastName}}</td>
+  <td>{{patientdisplay.lastName}}</td>
 
-  <td>{{patientInfo.sex}}</td>
+  <td>{{patientdisplay.sex}}</td>
 
-  <td>{{patientInfo.dob}}</td>
+  <td>{{patientdisplay.dob}}</td>
 
-  <td>{{patientInfo.phoneNo}}</td>
+  <td>{{patientdisplay.phoneNo}}</td>
 
-  <td>{{patientInfo.emergencyNo}}</td>
+  <td>{{patientdisplay.emergencyNo}}</td>
 
-  <td>{{patientInfo.checkOuttime}}</td>
+  <td>{{patientdisplay.checkOuttime}}</td>
 
-  <td>{{patientInfo.checkIntime}}</td>
+  <td>{{patientdisplay.checkIntime}}</td>
 
-  <td> {{patientInfo.status}}</td>
+  <td> {{patientdisplay.status}}</td>
+
+  <button class="btn btn-success">Edit</button>
 </tr>
     {{/each}}
 
