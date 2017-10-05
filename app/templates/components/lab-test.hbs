@@ -1,20 +1,18 @@
+<div class="row">
+  <form>
+    <div class="col-md-5">
+      <div class=form-group>
+        <label for="labType">Lab Type</label> {{textarea id="labType" value=labType class="form-control"}}
+      </div>
+    </div>
 
-<div class="col-md-6">
-<label for="firstName"></label><input placeholder="Name" #newName>
-
-</div>
-
-<div class="col-md-6">
-  <label for="lastName"></label><input placeholder="Name" #newName>
-
-</div>
-
-<div class="col-md-6">
- <input placeholder="Lab type" #labType>
-
-</div>
-
-<div class="col-md-8">
-  <input placeholder="Lab notes" #labNotes>
-
+    <div class="col-md-5">
+      <div class=form-group>
+        <label for="labNotes">Lab Notes</label> {{textarea id="labNotes" value=labNotes class="form-control"}}
+      </div>
+    </div>
+    <div class="col-md-2 btn-labinfo">
+      <button class="btn btn-success" {{action 'labInfo'}}>Add Information</button>
+    </div>
+  </form>
 </div>

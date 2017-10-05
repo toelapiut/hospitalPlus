@@ -29,7 +29,7 @@ export default Ember.Component.extend({
         patientsId: this.get("patientsId"),
         dob: this.get('dob'),
         emergencyNo: this.get('emergencyNo'),
-        examiner: this.get('emergencyNo'),
+        examiner: this.get('examiner'),
         firstName: this.get('firstName'),
         followUp: this.get('followUp'),
         lastName: this.get('lastName'),

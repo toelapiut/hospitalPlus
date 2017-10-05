@@ -1,10 +1,13 @@
+
 .checks img {
   height: 20px;
   width: 30px;
 }
-
-.checks {
-  text-align: center;
+.addpatient{
+color:blue;
+  /*border: 1px solid #5ce8cc;*/
+}
+.checks {1`1`  text-align: center;
 }
 
 .gender {
@@ -29,4 +32,17 @@ h1{
 }
 .myTable{
   padding: 20px;
+=======
+.btn-labinfo{
+  margin-top: 25px;
+}
+.btn-labinfo button{
+  height: 56px;
+}
+.form-control {
+  input: 30%;
+}
+.container {
+  padding-right: 40px;
+  padding-left: 40px;
 }
