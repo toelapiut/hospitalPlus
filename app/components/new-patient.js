@@ -14,12 +14,12 @@ export default Ember.Component.extend({
     },
     setSelection: function(selected) {
       this.set('sex', selected)
-      console.log(this.get('sex'))
+      // console.log(this.get('sex'))
     },
 
     setSelection2: function(selected2) {
       this.set('status', selected2)
-      console.log(this.get('status'))
+      // console.log(this.get('status'))
     },
 
     submitForm() {
@@ -38,7 +38,7 @@ export default Ember.Component.extend({
         sex: this.get('sex'),
         status: this.get('status')
       };
-      console.log(params)
+      // console.log(params)
       this.set('showHideForm', false);
       this.sendAction("submitForm", params)
     }

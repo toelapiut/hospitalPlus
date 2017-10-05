@@ -3,9 +3,9 @@
   height: 20px;
   width: 30px;
 }
-.addpatient{
-color:blue;
-  /*border: 1px solid #5ce8cc;*/
+.addpatient img{
+margin-right: 100%;
+
 }
 .checks {1`1`  text-align: center;
 }
@@ -32,7 +32,8 @@ h1{
 }
 .myTable{
   padding: 20px;
-=======
+}
+
 .btn-labinfo{
   margin-top: 25px;
 }

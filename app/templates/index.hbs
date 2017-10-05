@@ -30,7 +30,7 @@
     </tr>
   </thead>
     <tbody>
-    {{#each model as |patientdisplay|}}
+    {{#each model.patientdisplays as |patientdisplay|}}
 
 
 <tr>
@@ -53,6 +53,8 @@
   <td>{{patientdisplay.checkIntime}}</td>
 
   <td> {{patientdisplay.status}}</td>
+
+  <button class="btn btn-success">Edit</button>
 </tr>
     {{/each}}
 
