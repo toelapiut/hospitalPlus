@@ -1,8 +1,9 @@
-{{#burger-menu as |burger|}}
+<div class="navbars">
+{{#burger-menu animation="open-door" width=200 translucentOverlay=false itemAnimation="stack" as |burger|}}
   {{#burger.menu itemTagName="li" as |menu|}}
-    <i class="fa fa-times closer " aria-hidden="true" {{action burger.state.actions.close}}></i>
+    <i class="fa fa-times fa-2x closer " aria-hidden="true" {{action burger.state.actions.close}}></i>
 <div>
-    <img class="logo" src="image/favicon.png"><span class="logo-name">Hospital</span>
+    <img class="logo" src="image/logo2.png">
 </div>
     <ul>
       {{#menu.item}}
@@ -22,3 +23,4 @@
  </a> {{outlet}}
   {{/burger.outlet}}
 {{/burger-menu}}
+</div>

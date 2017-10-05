@@ -33,22 +33,19 @@ h1{
 .myTable{
   padding: 20px;
 }
-
-.btn-labinfo{
-  margin-top: 25px;
-}
-.btn-labinfo button{
-  height: 56px;
+h2,h3,h4 {
+  color: white;
 }
 .form-control {
   input: 30%;
 }
-/*.container {
-  padding-right: 40px;
-  padding-left: 40px;
-}*/
+.btn-labinfo{
+  margin-top: 25px;
+}
 
-
+.btn-labinfo button {
+  height: 56px;
+}
 .bm-menu{
   width: 100px;
 }
