@@ -1,10 +1,8 @@
-import Ember from 'ember';
-
 export default Ember.Route.extend({
   model() {
-    return Ember.RSVP.hash({
-      labs: this.store.findAll('lab')
-    })
+    // return Ember.RSVP.hash({
+    //   labs: this.store.findAll('lab')
+    // })
   },
   actions: {
     labInfos(params) {

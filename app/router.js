@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('lab');
   this.route('new-patient');
   this.route('patientdisplay');
+  this.route('lab-test');
 });
 
 export default Router;
