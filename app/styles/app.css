@@ -3,13 +3,13 @@
   height: 20px;
   width: 30px;
 }
-.addpatient img{
-margin-right: 100%;
-
+.addpatient{
+  text-align: right;
+  width: 30px;
 }
-.checks {1`1`  text-align: center;
+.floater{
+  float: right;
 }
-
 .gender {
   width: 100px;
 }
@@ -43,7 +43,15 @@ h1{
 .form-control {
   input: 30%;
 }
-.container {
+/*.container {
   padding-right: 40px;
   padding-left: 40px;
+}*/
+
+
+.bm-menu{
+  width: 100px;
+}
+.container{
+  background-color: blue;
 }
