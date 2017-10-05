@@ -1,2 +1,10 @@
 {{update-patient patientdisplay=model update="update"}}
-{{new-medication saveMedication="saveMedication"}}
+
+<h1>Medicine Supply</h1>
+{{new-medication saveMedication2="saveMedication3"}}
+<ul>
+{{#each model as |medication|}}
+<p>{{medication.prescription}} {{medication.prescriber}}</p>
+{{patient-tile patientdisplay=model update="update"}}
+{{/each}}
+</ul>

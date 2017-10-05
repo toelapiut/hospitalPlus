@@ -1,1 +1,12 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">{{#link-to 'index'}}Hospital +{{/link-to}}</a>
+    </div>
+    {{#link-to 'new-patient'}}Add Patient{{/link-to}}
+    {{#link-to 'patientdisplay'}}Edit Patient Info{{/link-to}}
+    {{#link-to 'lab'}}Lab Activities{{/link-to}}
+  </div>
+</nav>
+
 {{outlet}}

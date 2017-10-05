@@ -1,24 +1,95 @@
-{{#each model as |patientdisplay|}}
-  {{patient-tile patientdisplay=patientdisplay}}
-{{/each}}
+<div class="container ">
+  <div class='addpatient'>
+    <img src="image/favicon.ico"><span class="patientbtn">Patient</span>
+  </div>
+</div>
 
+<div class="container" id="main">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Patients ID</th>
+
+      <th>First Name</th>
+
+      <th>Last Name</th>
+
+      <th>Gender</th>
+
+      <th>D.O.B</th>
+
+      <th>phone No.</th>
+
+      <th>Emergency No.</th>
+
+      <th>Check Out Time.</th>
+
+      <th>Check In Time.</th>
+
+      <th>Status</th>
+    </tr>
+  </thead>
+    <tbody>
+    {{#each model.patientdisplays as |patientdisplay|}}
+
+<tr>
+  <td>{{patientdisplay.patientsId}}</td>
+
+  <td>{{patientdisplay.firstName}}</td>
+
+  <td>{{patientdisplay.lastName}}</td>
+
+  <td>{{patientdisplay.sex}}</td>
+
+  <td>{{patientdisplay.dob}}</td>
+
+  <td>{{patientdisplay.phoneNo}}</td>
+
+  <td>{{patientdisplay.emergencyNo}}</td>
+
+  <td>{{patientdisplay.checkOuttime}}</td>
+
+  <td>{{patientdisplay.checkIntime}}</td>
+
+  <td> {{patientdisplay.status}}</td>
+
+  <button class="btn btn-success">Edit</button>
+</tr>
+    {{/each}}
+
+    </tbody>
+  </table>
+</div>
+
+
+
+  <div class="container">
 <footer>
   <h2>Some of the hospitals that we serve include:</h2>
   <div class="row">
-    <div class="col-md-4">
-      <h3>Nairobi Hospital</h3>
-      <h4>General Enquiries</h4>
-      <h4>+ 254 700 342 400</h4>
+    <div class="col-sm-3">
+      <h4>Nairobi Hospital</h4>
+      <h5>General Enquiries</h5>
+      <h5>+ 254 700 342 400</h5>
     </div>
-    <div class="col-md-4">
-      <h3>Aga Khan Hospital</h3>
-      <h4>General Enquiries</h4>
-      <h4>+254 700 250 600</h4>
+    <div class="col-sm-3">
+      <h4>Aga Khan Hospital</h4>
+      <h5>General Enquiries</h5>
+      <h5>+254 700 250 600</h5>
     </div>
-    <div class="col-md-4">
-      <h3>Mater Hospital</h3>
-      <h4>General Enquiries</h4>
-      <h4>+254 700 100 010</h4>
+    <div class="col-sm-3">
+      <h4>Mater Hospital</h4>
+      <h5>General Enquiries</h5>
+      <h5>+254 700 100 010</h5>
+    </div>
+    <div class="col-sm-3">
+      <h4>More</h4>
+      <a href="#" class="footerLinks">About Us</a> <br>
+      <a href="#" class="footerLinks">Contact Us</a> <br>
+      <a href="#" class="footerLinks">Copyright</a> <br>
+      <a href="#" class="footerLinks">Privacy</a>
     </div>
   </div>
+  <p>&copy;Hospital Plus Inc</p>
 </footer>
+</div>

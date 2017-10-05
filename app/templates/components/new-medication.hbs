@@ -1,29 +1,29 @@
 {{#if addMedication}}
-  <h1>Medicine Supply</h1>
+
 
   <div class="container">
+<h2>Add Medication</h2>
     <form>
-      <div class="row">
+
         <div class="form-group">
           <div class="col-md-4">
-            <label for="medication">Medication:</label> {{input value=medication id="medication"  class="form-control"}}
+            <label for="medication">Medication</label> {{input value=medication id="medication"  class="form-control"}}
           </div>
         </div>
         <div class="form-group">
           <div class="col-md-4">
-            <label for="prescriber">Prescriber:</label> {{input value=prescriber id="prescriber" class="form-control"}}
+            <label for="prescriber">Prescriber</label> {{input value=prescriber id="prescriber" class="form-control"}}
           </div>
         </div>
         <div class="form-group">
           <div class="col-md-4">
-            <label for="prescription">Prescription:</label> {{input value=presciption id="prescription" class="form-control"}}
+            <label for="prescription">Prescription</label> {{input value=prescription id="prescription" class="form-control"}}
           </div>
         </div>
-      </div>
-      <div class="row">
+
         <div class="form-group">
           <div class="col-md-3">
-            <label for="date">Date of Prescription:</label> {{input value=date id="date" class="form-control" type="date"}}
+            <label for="date">Date of Prescription</label> {{input value=date id="date" class="form-control" type="date"}}
           </div>
         </div>
         <div class="form-group">
@@ -31,10 +31,10 @@
             <label for="quantityRequested">Quantity Needed</label> {{input value=quantityRequested id="quantityRequested" class="form-control"}}
           </div>
         </div>
-      </div>
-      <button class="btn btn-success" {{action 'saveMedication'}}>Add To Receipt</button>
+
+      <button class="medButton" {{action 'saveMedication1'}}>Add To Receipt</button>
     </form>
   </div>
 {{else}}
-  <button class="btn btn-info" {{action 'drugsFormShow'}}>Prescribe Medicine</button>
+  <button class="medButton" {{action 'drugsFormShow'}}>Prescribe Medicine</button>
 {{/if}}
