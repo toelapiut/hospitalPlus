@@ -1,3 +1,38 @@
+
+.checks img {
+  height: 20px;
+  width: 30px;
+}
+.addpatient{
+color:blue;
+  /*border: 1px solid #5ce8cc;*/
+}
+.checks {1`1`  text-align: center;
+}
+
+.gender {
+  width: 100px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+td{
+  vertical-align: text-bottom;
+  margin: 60px;
+}
+th, td {
+  padding: 50px;
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+h1{
+  color: #000;
+}
+.myTable{
+  padding: 20px;
+=======
 .btn-labinfo{
   margin-top: 25px;
 }

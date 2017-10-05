@@ -4,10 +4,10 @@ export default Ember.Component.extend({
   checkInclick: false,
   actions: {
     checkIn() {
-      this.set("checkInclick",true)
+      this.set("checkInclick",false)
     },
     checkOut() {
-      this.set("checkInclick",false)
+      this.set("checkInclick",true)
     }
   }
 });
