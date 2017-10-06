@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('xray', 'Unit | Model | xray', {
+moduleForModel('xrays', 'Unit | Model | xrays', {
   // Specify the other units that are required for this test.
   needs: []
 });
