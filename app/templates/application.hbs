@@ -2,16 +2,23 @@
 {{#burger-menu animation="open-door" width=200 translucentOverlay=false itemAnimation="stack" as |burger|}}
   {{#burger.menu itemTagName="li" as |menu|}}
     <i class="fa fa-times fa-2x closer " aria-hidden="true" {{action burger.state.actions.close}}></i>
-<div>
-    <img class="logo" src="image/logo2.png">
-</div>
+    <h2 class="menu">Menu</h2>
+    <div class="buz">
+      <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+    </div>
     <ul>
       {{#menu.item}}
-        {{link-to 'Home' 'index'}}
+      <div>
+       {{link-to 'Home' 'index'}}
+     </div>
       {{/menu.item}}
 
       {{#menu.item}}
         {{link-to '+ Patient ' 'new-patient'}}
+      {{/menu.item}}
+
+      {{#menu.item}}
+        {{link-to 'Lab ' 'lab'}}
       {{/menu.item}}
 
     </ul>

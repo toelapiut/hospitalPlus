@@ -11,26 +11,68 @@ $bm-transition-duration: 0.5s;
   transition: opacity 0.5s;
   -webkit-transition: opacity 0.5s;
 
+
   &.burger-hidden {
     opacity: 0;
     color:#5ce8cc;
   }
 }
 
+.ember-burger-menu .bm-menu ul li:first-child a {
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+
+.ember-burger-menu .bm-menu ul li a {
+    display: block;
+    /*padding: 1em 1em 1em 1.2em;*/
+    outline: 0;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    /*color: #e2e2e2;*/
+    text-transform: uppercase;
+    text-shadow: 0 0 1px rgba(255,255,255,.1);
+    letter-spacing: 1px;
+    -webkit-transition: background .4s;
+    transition: background .4s;
+    cursor: pointer;
+}
+
+a link{
+    color:white;
+    /*margin-bottom:40px;*/
+    color:#5ce8cc;
+
+}
+
 #main {
   height: 100vh;
+
 }
 
 ul {
   height: 100%;
   list-style-type: none;
   text-decoration: none;
-  margin: 0;
+  margin-bottom: 30px;
   padding: 0;
   /*width: 200px;*/
-  background-color: #f1f1f1;
+  /*background-color: #f1f1f1;*/
+    background-color:#047a66;
+
+}
+ul img{
+  width: 20px;
 }
 
+.buz {
+  text-align: center;
+  margin-left: -14px;
+}
+
+.menu{
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-weight: bolder;
+}
 li a {
   display: block;
   color: #000;
@@ -43,16 +85,21 @@ li a {
 }
 a {
   text-decoration: none;
+  color :#5ce8cc;
 }
 /* Change the link color on hover */
 li a:hover {
   list-style-type: none;
   background-color:#5ce8cc;
   color: white;
+  position: inherit;
+  text-align: center;
   height: 50px;
   padding:0px 0px;
   margin: 0px;
   text-decoration: none;
+  text-align: center;
+  
 }
 
 .logo {
@@ -82,7 +129,10 @@ div.bm-menu{
 }
 
 .navbars{
-  margin-left: 20px;
+  /*margin-left: 20px;*/
+  height: 100vh;
+   background-color: #047a66;
+
 }
 
 /*button animation*/
