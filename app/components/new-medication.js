@@ -16,7 +16,7 @@ export default Ember.Component.extend({
         patientdisplay: this.get('patientdisplay')
       };
       this.set('addMedication', false);
-      this.sendAction('saveMedication', params);
+      this.sendAction('saveMedication2', params);
     }
   }
 });
