@@ -8,7 +8,6 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
 
-  this.route('patientdisp');
   this.route('xray');
   this.route('lab');
   this.route('new-patient');
