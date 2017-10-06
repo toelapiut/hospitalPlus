@@ -1,8 +1,47 @@
 #conta {
   background-color: #2F4F4F;
 }
-
 .h1 {
   text-align: bold;
   background-color: blue;
+}
+table, th, td {
+  border: 1px solid black;
+}
+td{
+  vertical-align: text-bottom;
+  margin: 60px;
+}
+th, td {
+  padding: 50px;
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+h1{
+  color: #000;
+}
+.myTable{
+  padding: 20px;
+}
+.form-control {
+  input: 30%;
+}
+.btn-labinfo{
+  margin-top: 25px;
+}
+
+.btn-labinfo button {
+  height: 56px;
+}
+#cont {
+  background-color: azure;
+  background-image: url(../img/microscope.jpg);
+}
+.form-control {
+  input: 30%;
+}
+.container {
+  padding-right: 40px;
+  padding-left: 40px;
 }
