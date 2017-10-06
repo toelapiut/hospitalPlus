@@ -1,10 +1,37 @@
 {{update-patient patientdisplay=model update="update"}}
 
 <h1>Medicine Supply</h1>
+
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Medication:</th>
+        <th>Prescriber</th>
+        <th>Prescription</th>
+        <th>Date</th>
+        <th>Quantity Requested</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each model.medications as |medication|}}
+        <tr>
+          <td>{{medication.medication}}</td>
+          <td>{{medication.prescriber}}</td>
+          <td>{{medication.prescription}}</td>
+          <td>{{medication.date}}</td>
+          <td>{{medication.quantityRequested}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+  </table>
+</div>
+
+
 {{new-medication saveMedication2="saveMedication3"}}
 <ul>
-{{#each model as |medication|}}
-<p>{{medication.prescription}} {{medication.prescriber}}</p>
-{{patient-tile patientdisplay=model update="update"}}
-{{/each}}
+  {{#each model as |medication|}}
+    <p>{{medication.prescription}} {{medication.prescriber}}</p>
+    {{patient-tile patientdisplay=model update="update"}}
+  {{/each}}
 </ul>
