@@ -1,4 +1,63 @@
-{{#each model as |patientInfo|}}
-{{patient-tile patientInfo=patientInfo}}
-{{/each}}
-{{new-patient showForm="showForm"}}
+<div class="container ">
+  <div class='addpatient'>
+    <img src="image/favicon.ico"><span class="patientbtn">Patient</span>
+  </div>
+</div>
+
+<div class="container" id="main">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Patients ID</th>
+
+      <th>First Name</th>
+
+      <th>Last Name</th>
+
+      <th>Gender</th>
+
+      <th>D.O.B</th>
+
+      <th>phone No.</th>
+
+      <th>Emergency No.</th>
+
+      <th>Check Out Time.</th>
+
+      <th>Check In Time.</th>
+
+      <th>Status</th>
+    </tr>
+  </thead>
+    <tbody>
+    {{#each model.patientdisplays as |patientdisplay|}}
+
+
+<tr>
+  <td>{{patientdisplay.patientsId}}</td>
+
+  <td>{{patientdisplay.firstName}}</td>
+
+  <td>{{patientdisplay.lastName}}</td>
+
+  <td>{{patientdisplay.sex}}</td>
+
+  <td>{{patientdisplay.dob}}</td>
+
+  <td>{{patientdisplay.phoneNo}}</td>
+
+  <td>{{patientdisplay.emergencyNo}}</td>
+
+  <td>{{patientdisplay.checkOuttime}}</td>
+
+  <td>{{patientdisplay.checkIntime}}</td>
+
+  <td> {{patientdisplay.status}}</td>
+
+  <button class="btn btn-success">Edit</button>
+</tr>
+    {{/each}}
+
+    </tbody>
+  </table>
+</div>

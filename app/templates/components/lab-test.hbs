@@ -1,0 +1,43 @@
+<div class="container" id="cont">
+  <form>
+    <div class="row">
+      <div class="col-md-2">
+        <div class=form-group>
+          <label for="date">Date </label> {{input type="date" class="form-control" id="dateRequested" value=dateRequested }}
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class=form-group>
+          <label for="patientName">Patient Name</label> {{textarea id="patientName" value=patientName class="form-control"}}
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class=form-group>
+          <label for="requestedBy"> Requested By</label> {{textarea id="requestedBy" value=requestedBy class="form-control"}}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class=form-group>
+          <label for="labType">Lab Type</label> {{textarea id="labType" value=labType class="form-control"}}
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class=form-group>
+          <label for="testResult">Test Result</label> {{textarea id="testResult" value=testResult class="form-control"}}
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class=form-group>
+          <label for="labNote">Lab Note</label> {{textarea id="labNote" value=labNote class="form-control"}}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-1 btn-labinfo">
+      <button class="btn btn-success" {{action 'labInfos'}}>Add Infomation</button>
+    </div>
+  </form>
+</div>

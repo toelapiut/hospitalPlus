@@ -1,5 +1,5 @@
 {
-  "patientInfos": [{
+  "patientdisplays": [{
     "firstName": "Apiut",
     "lastName": "Toel",
     "sex": "Male",
@@ -9,9 +9,11 @@
     "phoneNo": "0702355708",
     "location":"Nairobi",
     "checkIntime":"18:14",
+    "checkOuttime":"1300hrs",
+    "patientsId":"4572829",
     "examiner":"Dr name",
     "followUp":"we love health",
-    "DOB": "04/13/1992",
+    "dob": "04/13/1992",
     "status": "completed",
     "emergencyNo": "+254701355708",
     "phoneNo": "0702355708"
@@ -27,8 +29,11 @@
     "note": "spinal cord and the left leg"
   }],
   "labs": [{
-    "dateRequested": "04/13/2017",
     "labType": "bleeding Time",
-    "labNotes": "fracture"
+    "labNote": "fracture",
+    "requestedBy":"Dr who",
+    "testResult":"blooding test",
+    "dateRequested":"12/23/1997",
+    "patientName":"Apiut Toel"
   }]
 }
