@@ -1,0 +1,36 @@
+<div class="container" id="cont">
+  <form>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="form-group">
+          {{input type="date" class="form-control" id="dateRequested" value=dateRequested}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="form-group">
+            <label for="requestedBy">Requested By</label> {{input value="requestedBy" value=requestedBy class="form-control"}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="form-group">
+              <label for="patientNames">Patient Names</label> {{input value="patientNames" value=patientNames class="form-control"}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <div class="form-group">
+                <label for="xrayType">Xray Type</label> {{input value="xrayTypes" value=xrayType class="form-control"}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label for="xrayNotes">Xray Notes</label> {{input value="xrayNotes" value=xrayNotes class="form-control"}}
+                </div>
+              </div>
+
+
+              <div class="col-md-1 btn-xray">
+                <button class="btn btn-success" {{action 'xray'}}>Edit Info</button>
