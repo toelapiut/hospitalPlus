@@ -1,3 +1,5 @@
+{{#if addLabTile}}
+<h1>Lab Tests</h1>
 <div class="container ">
   <div class='labInfos'>
     <img src="image/favicon.ico"><span class="labInfos">Lab Test</span>
@@ -42,9 +44,10 @@
 </tr>
     {{/each}}
 
+
     </tbody>
   </table>
-</div>
+  </div>
+  <button {{action 'addLabTile'}}>Lab Tests</button>
+  {{/if}}
 
-
-{{lab-test labInfos="labInfos"}}
