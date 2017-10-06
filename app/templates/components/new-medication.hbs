@@ -32,9 +32,9 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-success" {{action 'saveMedication'}}>Add To Receipt</button>
+      <button class="medButton" {{action 'saveMedication'}}>Add Receipt</button>
     </form>
   </div>
 {{else}}
-  <button class="btn btn-info" {{action 'drugsFormShow'}}>Prescribe Medicine</button>
+  <button class="medButton" {{action 'drugsFormShow'}}>Prescribe</button>
 {{/if}}

@@ -41,11 +41,11 @@
     </div>
   </div>
   </div>
-  <button class="btn btn-info" {{action 'update' patientdisplay}}>Save</button>
+  <button class="medButton" {{action 'update' patientdisplay}}>Save</button>
   </form>
 </div>
 {{else}}
 <div class="container">
-<button {{action 'updatePatient'}}>Edit Patient Info</button>
+<button class="medButton" {{action 'updatePatient'}}>Edit Patient</button>
 </div>
 {{/if}}

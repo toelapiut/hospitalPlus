@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 .checks img {
   height: 20px;
   width: 30px;
@@ -65,8 +63,41 @@ h1{
   padding-left: 40px;
 }
 
-h2,h3,h4 {
-  color: white;
+.medButton {
+  -webkit-transform-duration:0.4s;
+  transition-duration: 0.4s;
+  color:white;
+  background-color: green;
+  border: none;
+  padding: 15px 32px;
+  display: inline-block;
+  font-size:16px;
+}
+.medButton:hover {
+  background-color: white;
+  color: green;
+  border: 1px solid green;
 }
 
-
+h1{
+  font-family: 'Roboto', cursive;
+  font-weight: 400;
+text-transform: uppercase;
+color:darkgreen;
+}
+h2{
+  font-family: 'Garanoid';
+  font-weight: 800;
+padding: 10px 5px;
+  color: blue;
+}
+a {
+  color: #2a8236;
+  text-decoration:none;
+  font-size: 18px;
+  padding-right: 15px;
+}
+a:hover {
+  text-decoration: none;
+  color: #2a8236;
+}
