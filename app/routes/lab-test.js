@@ -1,6 +1,7 @@
 export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
+      labs: this.store.findAll('labInfos'),
       labs: this.store.findAll('lab')
     })
   },
