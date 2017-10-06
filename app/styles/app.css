@@ -37,11 +37,10 @@ label {
 }
 
 h1 {
-  font-family: 'Roboto';
-  cursive;
+  font-family: 'Roboto', cursive;
   font-weight: bold;
   text-transform: uppercase;
-  color: lime;
+  color: red;
 }
 
 h2 {
