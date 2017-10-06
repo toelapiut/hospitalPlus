@@ -1,43 +1,44 @@
 {{#if updatePatient}}
 
+<h1>Edit info concerning: {{patientdisplay.firstName}} {{patientdisplay.lastName}}</h1>
 <div class="container">
-<h4>Update Patient's Info: {{patientdisplay.firstName}} {{patientdisplay.lastName}}</h4>
+
 
   <form>
 
     <div class="row">
       <div class="col-md-4">
     <div class="form-group ">
-      <label for="id">Location</label> {{input value=location id="location" class="form-control"}}
+      <label for="location">Location</label> {{input value=location id="location" class="form-control"}}
     </div>
   </div>
   <div class="col-md-4">
     <div class="form-group">
-      <label for="id">Phones Number</label> {{input value=phoneNo id='phoneNo' class="form-control" type="number"}}
+      <label for="phoneNo">Phones Number</label> {{input value=phoneNo id='phoneNo' class="form-control" type="number"}}
     </div>
   </div>
   <div class="col-md-4">
     <div class="form-group">
-      <label for="id">emergency Number</label> {{input value=emergencyNo id='emergencyNo' class="form-control" type="number"}}
+      <label for="emergencyNo">emergency Number</label> {{input value=emergencyNo id='emergencyNo' class="form-control" type="number"}}
     </div>
   </div>
   </div>
   <div class="row">
     <div class="col-md-6">
     <div class="form-group">
-      <label for="id">Follow Up</label> {{textarea value=followUp id="followUp" class="form-control"}}
+      <label for="followUp">Follow Up</label> {{textarea value=followUp id="followUp" class="form-control"}}
     </div>
   </div>
   <div class="col-md-6">
     <div class="form-group">
-      <label for="id">Status</label> {{textarea value=status id="status" class="form-control"}}
+      <label for="status">Status</label> {{textarea value=status id="status" class="form-control"}}
     </div>
   </div>
 </div>
   <div class="row">
     <div class="form-group">
       <div class="col-md-12">
-      <label for="id">Examiner</label> {{input value=examiner id='examiner' class="form-control"}}
+      <label for="examiner">Examiner</label> {{input value=examiner id='examiner' class="form-control"}}
     </div>
   </div>
   </div>

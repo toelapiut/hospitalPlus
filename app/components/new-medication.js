@@ -6,14 +6,13 @@ export default Ember.Component.extend({
     drugsFormShow() {
       this.set('addMedication', true)
     },
-    saveMedication() {
+    saveMedication1() {
       var params = {
         medication: this.get('medication'),
         prescriber: this.get('prescriber'),
         prescription: this.get('prescription'),
         date: this.get('date'),
-        quantity: this.get('quantity'),
-        patientdisplay: this.get('patientdisplay')
+        quantityRequested: this.get('quantityRequested')
       };
       this.set('addMedication', false);
       this.sendAction('saveMedication2', params);

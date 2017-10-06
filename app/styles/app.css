@@ -59,8 +59,66 @@ h1{
   input: 30%;
 }
 .container {
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.medButton {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  color: white;
+  background-color: green;
+  border: none;
+  padding: 15px 32px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.medButton:hover {
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+}
+
+label {
+  color: #1e59ff;
+}
+
+h1 {
+  font-family: 'Roboto', cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: red;
+}
+
+h2 {
+  font-family: 'Garanoid';
+  cursive;
+  font-weight: 400;
+  padding: 10px 5px;
+  color: blue;
+}
+h4 {
+  font-weight: 800;
+  font-family: 'Roboto', cursive;
+  font-size: 24px;
+}
+.navbar-brand a {
+  color: green;
+}
+
+a {
+  color: #2a8236;
+  text-decoration: none;
+  font-size: 18px;
+  padding-right: 15px;
+}
+a:hover {
+  text-decoration: none;
+  color: #2a8236;
+}
+.footerLinks {
+
 }
 
 .medButton {
